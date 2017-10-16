@@ -2,58 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="218cd5ee-063a-44c4-9c15-d1514a1dffe4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/studyblue-5.48_dc_tracking_misc-b57-v163_5.46-133-g3a5fa92-google_play-signedDebug.apk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/ChooseGoogleAccountScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/DateOfBirthSignUpScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/EmailLogInScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/EmailSignUpScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/FacebookLogInScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/FacebookSignUpScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/GoogleSignUpScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/HelloScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/LogInChannelsScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/LoggedInHomeScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingClassSelectScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingProfessorSelectScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingSchoolSelectScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingUserTypeScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/ProAwarenessScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenFactories/SignUpChannelsScreenFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/ChooseGoogleAccountScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/DateOfBirthSignUpScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/EmailLogInScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/EmailSignUpScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/FacebookLogInScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/FacebookSignUpScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/GoogleSignUpScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/HelloScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/LogInChannelsScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/LoggedInHomeScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/OnboardingClassSelectScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/OnboardingProfessorSelectScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/OnboardingSchoolSelectScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/OnboardingUserTypeScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/ProAwarenessScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ScreenObjects/SignUpChannelsScreen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Utils/DateFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Utils/Listeners.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Utils/RandomGenerator.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/studyblue.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/studyblue-5.48_dc_tracking_misc-b56-v163_5.46-131-gc5ddc01-google_play-debug.apk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/studyblue-v163_5.46-27-g4e19a99-google_play-debug.apk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/acceptanceTests/UserProfile.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/acceptanceTests/UserProfile.java" afterPath="$PROJECT_DIR$/src/test/java/AcceptanceTests/SmokeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/utils/AppiumServer.java" afterPath="$PROJECT_DIR$/src/test/java/Utils/AppiumServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/utils/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/Utils/BaseTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/utils/DataProvider.java" afterPath="$PROJECT_DIR$/src/test/java/Utils/DataProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utils/AppiumServer.class" afterPath="$PROJECT_DIR$/target/test-classes/utils/AppiumServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utils/BaseTest.class" afterPath="$PROJECT_DIR$/target/test-classes/utils/BaseTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utils/DataProvider.class" afterPath="$PROJECT_DIR$/target/test-classes/utils/DataProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/screenshots/Failures/SmokeTest.emailSignUp - 16-Oct-2017__05_33_56AM.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android.tests.iml" afterPath="$PROJECT_DIR$/android.tests.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingSchoolSelectScreenFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="188" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="188" />
+              <caret line="13" column="188" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="188" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ScreenObjects/OnboardingClassSelectScreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="14" column="69" lean-forward="true" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+              <caret line="14" column="69" lean-forward="false" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ScreenObjects/OnboardingProfessorSelectScreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+              <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,7 +111,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnboardingProfessorSelectScreenFactory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OnboardingProfessorSelectScreenFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingProfessorSelectScreenFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -169,6 +119,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -225,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingSchoolSelectScreenFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingClassSelectScreenFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingProfessorSelectScreenFactory.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -279,12 +240,6 @@
             <path>
               <item name="android.tests" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudyBlue-Automation-Android" type="462c0819:PsiDirectoryNode" />
-              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
-              <item name="Failures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android.tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyBlue-Automation-Android" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -292,45 +247,6 @@
               <item name="StudyBlue-Automation-Android" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android.tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyBlue-Automation-Android" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android.tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyBlue-Automation-Android" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AcceptanceTests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android.tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyBlue-Automation-Android" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ScreenFactories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android.tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyBlue-Automation-Android" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ScreenObjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android.tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyBlue-Automation-Android" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -626,7 +542,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508137634461</updated>
-      <workItem from="1508137635745" duration="19376000" />
+      <workItem from="1508137635745" duration="19643000" />
     </task>
     <servers />
   </component>
@@ -658,16 +574,15 @@
     <history-entry file="SmokeTest_emailSignUp - 2017.10.16 at 05h 34m 02s.xml">
       <configuration name="SmokeTest.emailSignUp" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmokeTest_facebookLogInWithValidCredentials - 2017.10.16 at 02h 45m 18s.xml">
-      <configuration name="SmokeTest.facebookLogInWithValidCredentials" configurationId="TestNG" />
+    <history-entry file="SmokeTest_emailSignUp - 2017.10.16 at 05h 42m 42s.xml">
+      <configuration name="SmokeTest.emailSignUp" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19376000" />
+    <option name="totallyTimeSpent" value="19643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1440" height="839" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -677,10 +592,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30651873" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30651873" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1088,7 +1003,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ScreenFactories/OnboardingSchoolSelectScreenFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="188" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="188" />
+          <caret line="13" column="188" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="188" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1098,7 +1013,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ScreenObjects/OnboardingClassSelectScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="14" column="69" lean-forward="true" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <caret line="14" column="69" lean-forward="false" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1148,7 +1063,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ScreenObjects/OnboardingProfessorSelectScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1162,6 +1077,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
