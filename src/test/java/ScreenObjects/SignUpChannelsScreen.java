@@ -27,8 +27,8 @@ public class SignUpChannelsScreen extends BaseTest {
         return new ChooseGoogleAccountScreen();
     }
 
-    public LoggedInHomeScreen clickSignUpWithFacebookButton() {
+    public FacebookLogInScreen clickSignUpWithFacebookButton() {
         signUpChannelsScreenFactory.signUpWithFacebookButton.click();
-        return new LoggedInHomeScreen();
+        return new FacebookLogInScreen();
     }
 }

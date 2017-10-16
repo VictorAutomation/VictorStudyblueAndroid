@@ -9,13 +9,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.Assert;
+import org.testng.annotations.*;
+import org.testng.annotations.Listeners;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-import org.testng.annotations.Listeners;
 
 @Listeners({Utils.Listeners.class})
 public class BaseTest {
@@ -73,5 +73,18 @@ public class BaseTest {
         System.out.println(".......Stopping Appium driver");
         driver.quit();
         AppiumServer.stopAppiumServer();
+    }
+
+
+    @BeforeMethod
+    private void studyBlueHelloScreenIsLoaded() {
+        System.out.println("StudyBlue hello Screen is loaded");
+        Assert.assertTrue(driver.findElementById("splash_image").isDisplayed());
+    }
+
+    @AfterMethod
+    public void afterEachTest() {
+        System.out.println("Resetting App");
+        driver.resetApp();
     }
 }

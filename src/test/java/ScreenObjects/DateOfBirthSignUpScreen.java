@@ -18,20 +18,17 @@ public class DateOfBirthSignUpScreen extends BaseTest {
     }
 
     public void enterValidBirthMonth(String month) {
-        dateOfBirthSignUpScreenFactory.monthInputField.click();
-        dateOfBirthSignUpScreenFactory.monthInputField.sendKeys(month);
+        dateOfBirthSignUpScreenFactory.monthInputField.setValue(month);
         driver.hideKeyboard();
     }
 
     public void enterValidBirthDay(String day) {
-        dateOfBirthSignUpScreenFactory.dayInputField.click();
-        dateOfBirthSignUpScreenFactory.dayInputField.sendKeys(day);
+        dateOfBirthSignUpScreenFactory.dayInputField.setValue(day);
         driver.hideKeyboard();
     }
 
     public void enterValidBirthYear(String year) {
-        dateOfBirthSignUpScreenFactory.yearInputField.click();
-        dateOfBirthSignUpScreenFactory.yearInputField.sendKeys(year);
+        dateOfBirthSignUpScreenFactory.yearInputField.setValue(year);  //sendKeys(year);
         driver.hideKeyboard();
     }
 

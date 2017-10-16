@@ -12,6 +12,7 @@ public class ChooseGoogleAccountScreen extends BaseTest {
     public ChooseGoogleAccountScreen() {
         PageFactory.initElements(new AppiumFieldDecorator(driver), chooseGoogleAccountScreenFactory);
         waitForElementToLoad(chooseGoogleAccountScreenFactory.firstAvailableAccountRadioButton);
+        waitForElementToLoad(chooseGoogleAccountScreenFactory.addAccountRadioButton);
     }
 
 
@@ -19,8 +20,17 @@ public class ChooseGoogleAccountScreen extends BaseTest {
         chooseGoogleAccountScreenFactory.firstAvailableAccountRadioButton.click();
     }
 
+    public void clickAddAccountRadioButton() {
+        chooseGoogleAccountScreenFactory.addAccountRadioButton.click();
+    }
+
     public LoggedInHomeScreen clickOkButton() {
         chooseGoogleAccountScreenFactory.okButton.click();
         return new LoggedInHomeScreen();
+    }
+
+    public GoogleLogInScreen clickOkButtonToAddNewAccount() {
+        chooseGoogleAccountScreenFactory.okButton.click();
+        return new GoogleLogInScreen();
     }
 }
