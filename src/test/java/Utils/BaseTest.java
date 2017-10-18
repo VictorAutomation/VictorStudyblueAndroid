@@ -60,7 +60,7 @@ public class BaseTest {
         capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.studyblue");
         capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.studyblue.ui.mainactivity.SbMainActivity");
         capabilities.setCapability("autoGrantPermissions", "true"); //grant permission to system dialogues such as location
-        capabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "/app/studyblue-5.48_dc_tracking_misc-b57-v163_5.46-133-g3a5fa92-google_play-signedDebug.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "/app/studyblue-5.49_web_debug_test-b1-v163_5.46-169-gb68b5e7-google_play-signedDebug.apk");
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 30);
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
@@ -73,18 +73,5 @@ public class BaseTest {
         System.out.println(".......Stopping Appium driver");
         driver.quit();
         AppiumServer.stopAppiumServer();
-    }
-
-
-    @BeforeMethod
-    private void studyBlueHelloScreenIsLoaded() {
-        System.out.println("StudyBlue hello Screen is loaded");
-        Assert.assertTrue(driver.findElementById("splash_image").isDisplayed());
-    }
-
-    @AfterMethod
-    public void afterEachTest() {
-        System.out.println("Resetting App");
-        driver.resetApp();
     }
 }

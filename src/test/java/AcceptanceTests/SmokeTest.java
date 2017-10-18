@@ -4,6 +4,8 @@ import ScreenObjects.*;
 import Utils.BaseTest;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -35,6 +37,20 @@ public class SmokeTest extends BaseTest {
         return new Object[][]{
                 {"test3@studyblue.com", "firefly!2002", "student", "Hogwarts School of Witchcraft and Wizardry", "Potions"}
         };
+    }
+
+    @BeforeMethod
+    private void studyBlueHelloScreenIsLoaded() {
+        System.out.println("StudyBlue hello Screen is loaded");
+        Assert.assertTrue(driver.findElementById("splash_image").isDisplayed());
+        driver.findElementById("api_server").clear();
+        driver.findElementById("api_server").sendKeys("https://openapi-mobile.dev.studyblue.com/");
+    }
+
+    @AfterMethod
+    public void afterEachTest() {
+        System.out.println("Resetting App");
+        driver.resetApp();
     }
 
     @Test(dataProvider = "validEmailSigUpCredentials")
@@ -115,7 +131,9 @@ public class SmokeTest extends BaseTest {
         HelloScreen helloScreen = new HelloScreen();
         SignUpChannelsScreen signUpChannelsScreen = helloScreen.clickSignUpButton();
         FacebookLogInScreen facebookLogInScreen = signUpChannelsScreen.clickSignUpWithFacebookButton();
-        facebookLogInScreen.clickLogIntoAnotherAccount();
+        facebookLogInScreen.switchToWebwiewContext();
+
+//        facebookLogInScreen.clickLogIntoAnotherAccount();
         facebookLogInScreen.enterFacebookLogInEmail(email);
         facebookLogInScreen.enterFacebookLogInPassword(password);
         OnboardingUserTypeScreen onboardingUserTypeScreen = facebookLogInScreen.clickLogInButton();

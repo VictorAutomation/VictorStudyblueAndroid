@@ -6,6 +6,8 @@ import Utils.BaseTest;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Set;
+
 public class SignUpChannelsScreen extends BaseTest {
 
     public static SignUpChannelsScreenFactory signUpChannelsScreenFactory = new SignUpChannelsScreenFactory();
