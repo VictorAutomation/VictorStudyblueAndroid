@@ -5,27 +5,15 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class FacebookLogInScreenFactory {
 
-//    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@index='5']")
-//    public MobileElement logIntoAnotherAccountButton;
+    @AndroidFindBy(id = "com.facebook.katana:id/login_add_account_group")
+    public MobileElement logIntoAnotherAccount;
 
-//    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@index='3']/android.widget.RelativeLayout[@index='1']/android.widget.EditText[contains(@resource-id,'login_username') and @index='0']")
-//    public MobileElement facebookEmailOrPhoneInputField;
-
-//    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@index='4']/android.widget.RelativeLayout[@index='1']/android.widget.EditText[contains(@resource-id,'login_username') and @index='0']")
-//    public MobileElement facebookEmailInputField;
-
-//    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@index='4']/android.widget.RelativeLayout[@index='2']/android.widget.EditText[contains(@resource-id,'login_password') and @index='0']")
-//    public MobileElement facebookPasswordInputField;
-
-//    @AndroidFindBy(xpath = "//android.widget.LinearLayout[@index='3']/android.widget.Button[contains(@resource-id,'login_login') and @index='3']")
-//    public MobileElement facebookLogInButton;
-
-    @AndroidFindBy(xpath = "//*[@id='m_login_email']")
+    @AndroidFindBy(id = "com.facebook.katana:id/login_username")
     public MobileElement facebookEmailInputField;
 
-    @AndroidFindBy(xpath = "//*[@id='m_login_password']")
+    @AndroidFindBy(id = "com.facebook.katana:id/login_password")
     public MobileElement facebookPasswordInputField;
 
-    @AndroidFindBy(xpath = "//*[@id='u_0_5']")
+    @AndroidFindBy(id = "com.facebook.katana:id/login_login")
     public MobileElement facebookLogInButton;
 }

@@ -1,5 +1,6 @@
 package Utils;
 
+import ScreenObjects.OnboardingUserTypeScreen;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -34,6 +35,11 @@ public class BaseTest {
     protected void waitForElementToLoad(MobileElement id) {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.elementToBeClickable(id));
+    }
+
+    protected void waitForFrameAndSwitch(String frameId) {
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameId));
     }
 
     protected static boolean waitForAttributeToBeVisible(By by, String attribute, String textToWait) {

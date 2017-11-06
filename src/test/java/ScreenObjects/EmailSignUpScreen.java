@@ -37,7 +37,7 @@ public class EmailSignUpScreen extends BaseTest{
     public void enterValidEmail() {
         String emailAddress = RandomGenerator.generateSimpleStrings(1, 10, false).iterator().next();
         emailSignUpScreenFactory.emailInputField.clear();
-        emailSignUpScreenFactory.emailInputField.sendKeys("no-reply+AndroidTesting"+emailAddress.concat("@studyblue.com"));
+        emailSignUpScreenFactory.emailInputField.sendKeys("no-reply+AndroidAutoTest"+emailAddress.concat("@studyblue.com"));
         driver.hideKeyboard();
     }
 

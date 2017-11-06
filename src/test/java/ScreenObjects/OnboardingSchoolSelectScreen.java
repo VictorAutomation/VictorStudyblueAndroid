@@ -1,6 +1,5 @@
 package ScreenObjects;
 
-import ScreenFactories.HelloScreenFactory;
 import ScreenFactories.OnboardingSchoolSelectScreenFactory;
 import Utils.BaseTest;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;

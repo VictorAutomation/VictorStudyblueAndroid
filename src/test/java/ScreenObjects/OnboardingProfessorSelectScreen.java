@@ -1,6 +1,5 @@
 package ScreenObjects;
 
-import ScreenFactories.HelloScreenFactory;
 import ScreenFactories.OnboardingProfessorSelectScreenFactory;
 import Utils.BaseTest;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -16,8 +15,8 @@ public class OnboardingProfessorSelectScreen extends BaseTest {
         waitForElementToLoad(onboardingProfessorSelectScreenFactory.firstInstructorInList);
     }
 
-    public ProAwarenessScreen chooseProfessor() {
+    public OnboardingSuggestedClassesScreen chooseProfessor() {
         onboardingProfessorSelectScreenFactory.firstInstructorInList.click();
-        return new ProAwarenessScreen();
+        return new OnboardingSuggestedClassesScreen();
     }
 }

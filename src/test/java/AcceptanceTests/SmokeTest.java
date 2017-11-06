@@ -39,21 +39,22 @@ public class SmokeTest extends BaseTest {
         };
     }
 
-    @BeforeMethod
+    @BeforeMethod(groups = "acceptance")
     private void studyBlueHelloScreenIsLoaded() {
         System.out.println("StudyBlue hello Screen is loaded");
         Assert.assertTrue(driver.findElementById("splash_image").isDisplayed());
         driver.findElementById("api_server").clear();
+        driver.hideKeyboard();
         driver.findElementById("api_server").sendKeys("https://openapi-mobile.dev.studyblue.com/");
     }
 
-    @AfterMethod
+    @AfterMethod(groups = "acceptance")
     public void afterEachTest() {
         System.out.println("Resetting App");
         driver.resetApp();
     }
 
-    @Test(dataProvider = "validEmailSigUpCredentials")
+    @Test(groups = "acceptance", dataProvider = "validEmailSigUpCredentials")
     private void emailSignUp(String month, String day, String year, String userType, String schoolName, String className) {
         HelloScreen helloScreen = new HelloScreen();
         SignUpChannelsScreen signUpChannelsScreen = helloScreen.clickSignUpButton();
@@ -71,13 +72,14 @@ public class SmokeTest extends BaseTest {
         OnboardingSchoolSelectScreen onboardingSchoolSelectScreen = onboardingUserTypeScreen.chooseUserType(userType);
         OnboardingClassSelectScreen onboardingClassSelectScreen = onboardingSchoolSelectScreen.enterSchoolName(schoolName);
         OnboardingProfessorSelectScreen onboardingProfessorSelectScreen = onboardingClassSelectScreen.enterClassName(className);
-        ProAwarenessScreen proAwarenessScreen = onboardingProfessorSelectScreen.chooseProfessor();
+        OnboardingSuggestedClassesScreen onboardingSuggestedClassesScreen = onboardingProfessorSelectScreen.chooseProfessor();
+        ProAwarenessScreen proAwarenessScreen = onboardingSuggestedClassesScreen.clickNextButton();
         LoggedInHomeScreen loggedInHomeScreen = proAwarenessScreen.clickFreeOption();
 
         Assert.assertTrue(loggedInHomeScreen.findActionBar().isDisplayed());
     }
 
-    @Test(dataProvider = "validEmailLogInCredentials")
+    @Test(groups = "acceptance", dataProvider = "validEmailLogInCredentials")
     private void emailLogIn(String email, String password) {
         HelloScreen helloScreen = new HelloScreen();
         LogInChannelsScreen logInChannelsScreen = helloScreen.clickSignInButton();
@@ -89,7 +91,7 @@ public class SmokeTest extends BaseTest {
         Assert.assertTrue(loggedInHomeScreen.findActionBar().isDisplayed());
     }
 
-    @Test(dataProvider = "validGoogleSignUpCredentials")
+    @Test(groups = "acceptance", dataProvider = "validGoogleSignUpCredentials")
     private void googleSignUp(String email, String password, String userType, String schoolName, String className) {
         HelloScreen helloScreen = new HelloScreen();
         SignUpChannelsScreen signUpChannelsScreen = helloScreen.clickSignUpButton();
@@ -99,17 +101,20 @@ public class SmokeTest extends BaseTest {
         googleLogInScreen.enterGoogleLogInEmail(email);
         googleLogInScreen.clickNextButtonToEnterPassword();
         googleLogInScreen.enterGoogleLogInPassword(password);
-        OnboardingUserTypeScreen onboardingUserTypeScreen = googleLogInScreen.clickNextButton();
+        googleLogInScreen.clickNextButton();
+        googleLogInScreen.agreeToTermsOfService();
+        OnboardingUserTypeScreen onboardingUserTypeScreen = googleLogInScreen.allowToUseYourInformation();
         OnboardingSchoolSelectScreen onboardingSchoolSelectScreen = onboardingUserTypeScreen.chooseUserType(userType);
         OnboardingClassSelectScreen onboardingClassSelectScreen = onboardingSchoolSelectScreen.enterSchoolName(schoolName);
         OnboardingProfessorSelectScreen onboardingProfessorSelectScreen = onboardingClassSelectScreen.enterClassName(className);
-        ProAwarenessScreen proAwarenessScreen = onboardingProfessorSelectScreen.chooseProfessor();
+        OnboardingSuggestedClassesScreen onboardingSuggestedClassesScreen = onboardingProfessorSelectScreen.chooseProfessor();
+        ProAwarenessScreen proAwarenessScreen = onboardingSuggestedClassesScreen.clickNextButton();
         LoggedInHomeScreen loggedInHomeScreen = proAwarenessScreen.clickFreeOption();
 
         Assert.assertTrue(loggedInHomeScreen.findActionBar().isDisplayed());
     }
 
-    @Test
+    @Test(groups = "acceptance")
     private void googleLogIn() {
         HelloScreen helloScreen = new HelloScreen();
         LogInChannelsScreen logInChannelsScreen = helloScreen.clickSignInButton();
@@ -126,27 +131,27 @@ public class SmokeTest extends BaseTest {
         Assert.assertTrue(loggedInHomeScreen.findActionBar().isDisplayed());
     }
 
-    @Test(dataProvider = "validFacebookSignUpCredentials")
+    @Test(groups = "acceptance", dataProvider = "validFacebookSignUpCredentials")
     private void facebookSignUp(String email, String password, String userType, String schoolName, String className) {
         HelloScreen helloScreen = new HelloScreen();
         SignUpChannelsScreen signUpChannelsScreen = helloScreen.clickSignUpButton();
         FacebookLogInScreen facebookLogInScreen = signUpChannelsScreen.clickSignUpWithFacebookButton();
-        facebookLogInScreen.switchToWebwiewContext();
-
-//        facebookLogInScreen.clickLogIntoAnotherAccount();
+//        facebookLogInScreen.switchToWebwiewContext();
+        facebookLogInScreen.clickLogIntoAnotherAccount();
         facebookLogInScreen.enterFacebookLogInEmail(email);
         facebookLogInScreen.enterFacebookLogInPassword(password);
         OnboardingUserTypeScreen onboardingUserTypeScreen = facebookLogInScreen.clickLogInButton();
         OnboardingSchoolSelectScreen onboardingSchoolSelectScreen = onboardingUserTypeScreen.chooseUserType(userType);
         OnboardingClassSelectScreen onboardingClassSelectScreen = onboardingSchoolSelectScreen.enterSchoolName(schoolName);
         OnboardingProfessorSelectScreen onboardingProfessorSelectScreen = onboardingClassSelectScreen.enterClassName(className);
-        ProAwarenessScreen proAwarenessScreen = onboardingProfessorSelectScreen.chooseProfessor();
+        OnboardingSuggestedClassesScreen onboardingSuggestedClassesScreen = onboardingProfessorSelectScreen.chooseProfessor();
+        ProAwarenessScreen proAwarenessScreen = onboardingSuggestedClassesScreen.clickNextButton();
         LoggedInHomeScreen loggedInHomeScreen = proAwarenessScreen.clickFreeOption();
 
         Assert.assertTrue(loggedInHomeScreen.findActionBar().isDisplayed());
     }
 
-    @Test
+    @Test(groups = "acceptance")
     private void facebookLogIn() {
         HelloScreen helloScreen = new HelloScreen();
         LogInChannelsScreen logInChannelsScreen = helloScreen.clickSignInButton();

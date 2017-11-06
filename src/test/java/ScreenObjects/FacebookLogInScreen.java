@@ -13,42 +13,32 @@ public class FacebookLogInScreen extends BaseTest {
 
     public FacebookLogInScreen() {
         PageFactory.initElements(new AppiumFieldDecorator(driver), facebookLogInScreenFactory);
-        waitForElementToLoad(facebookLogInScreenFactory.facebookEmailInputField);
-        waitForElementToLoad(facebookLogInScreenFactory.facebookPasswordInputField);
-        waitForElementToLoad(facebookLogInScreenFactory.facebookLogInButton);
+        waitForElementToLoad(facebookLogInScreenFactory.logIntoAnotherAccount);
     }
 
-//    public void clickLogIntoAnotherAccount() {
-//        facebookLogInScreenFactory.logIntoAnotherAccountButton.click();
-//    }
+    public void clickLogIntoAnotherAccount() {
+        facebookLogInScreenFactory.logIntoAnotherAccount.click();
+    }
 
     public void enterFacebookLogInEmail(String email) {
-//        facebookLogInScreenFactory.facebookEmailOrPhoneInputField.clear();
+        waitForElementToLoad(facebookLogInScreenFactory.facebookEmailInputField);
+        facebookLogInScreenFactory.facebookEmailInputField.click();
         facebookLogInScreenFactory.facebookEmailInputField.clear();
         facebookLogInScreenFactory.facebookEmailInputField.sendKeys(email);
-        driver.hideKeyboard();
+//        driver.hideKeyboard();
     }
 
     public void enterFacebookLogInPassword(String password) {
+        waitForElementToLoad(facebookLogInScreenFactory.facebookPasswordInputField);
+        facebookLogInScreenFactory.facebookPasswordInputField.click();
         facebookLogInScreenFactory.facebookPasswordInputField.clear();
         facebookLogInScreenFactory.facebookPasswordInputField.sendKeys(password);
-        driver.hideKeyboard();
+//        driver.hideKeyboard();
     }
 
     public OnboardingUserTypeScreen clickLogInButton() {
         waitForElementToLoad(facebookLogInScreenFactory.facebookLogInButton);
         facebookLogInScreenFactory.facebookLogInButton.click();
         return new OnboardingUserTypeScreen();
-    }
-
-    public void switchToWebwiewContext() {
-        Set<String> contextHandles = driver.getContextHandles();
-        for (String s : contextHandles) {
-            System.out.println("Context : " + s);
-//      if context contains webview then set the webview context
-            if (s.contains("WEBVIEW")) {
-                driver.context(s);
-            }
-        }
     }
 }

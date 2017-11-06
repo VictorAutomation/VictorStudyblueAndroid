@@ -24,13 +24,30 @@ public class GoogleLogInScreen extends BaseTest{
     }
 
     public void enterGoogleLogInPassword(String password) {
-        googleLogInScreenFactory.googlePasswordLogInField.clear();
+//        googleLogInScreenFactory.googlePasswordLogInField.clear();
         googleLogInScreenFactory.googlePasswordLogInField.sendKeys(password);
     }
 
-    public OnboardingUserTypeScreen clickNextButton() {
+    public void clickNextButton() {
         googleLogInScreenFactory.passwordNextButton.click();
-        return new OnboardingUserTypeScreen();
     }
 
+    public void agreeToTermsOfService() {
+        try {
+            waitForElementToLoad(googleLogInScreenFactory.iAgreeButton);
+            googleLogInScreenFactory.iAgreeButton.click();
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public OnboardingUserTypeScreen allowToUseYourInformation() {
+        try {
+            waitForElementToLoad(googleLogInScreenFactory.allowButton);
+            googleLogInScreenFactory.allowButton.click();
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+        return new OnboardingUserTypeScreen();
+    }
 }
