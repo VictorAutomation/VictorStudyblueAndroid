@@ -54,6 +54,7 @@ public class SmokeTest extends BaseTest {
         driver.resetApp();
     }
 
+
     @Test(groups = "acceptance", dataProvider = "validEmailSigUpCredentials")
     private void emailSignUp(String month, String day, String year, String userType, String schoolName, String className) {
         HelloScreen helloScreen = new HelloScreen();
