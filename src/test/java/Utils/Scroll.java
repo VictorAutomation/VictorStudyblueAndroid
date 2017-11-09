@@ -1,7 +1,8 @@
 package Utils;
-
-import io.appium.java_client.MobileElement;
+//
+//import io.appium.java_client.MobileElement;
 //import io.appium.java_client.SwipeElementDirection;
+//
 //import static io.appium.java_client.SwipeElementDirection.*;
 
 /**
@@ -103,3 +104,5 @@ public class Scroll extends BaseTest {
 //        driver.swipe(startX,startY,startX,endY,duration);
 //    }
 }
+
+

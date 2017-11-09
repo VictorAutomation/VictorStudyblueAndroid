@@ -16,8 +16,12 @@ public enum TestSetup {
         }
 
         @Override
-        void setUp(DesiredCapabilities capabilities) throws IOException, InterruptedException {
-            AppiumServer.startAppiumServer();
+        void setUp(DesiredCapabilities capabilities) {
+            try {
+                AppiumServer.startAppiumServer();
+            } catch (IOException | InterruptedException e) {
+                throw new SetUpException("Failed to initialize the Appium server", e);
+            }
         }
 
         @Override
@@ -26,8 +30,12 @@ public enum TestSetup {
         }
 
         @Override
-        void tearDown() throws InterruptedException, IOException {
-            AppiumServer.stopAppiumServer();
+        void tearDown() {
+            try {
+                AppiumServer.stopAppiumServer();
+            } catch (InterruptedException | IOException e) {
+                throw new SetUpException("Failed to shutdown the Appium server", e);
+            }
         }
 
         @Override
@@ -92,7 +100,7 @@ public enum TestSetup {
      * Called before creating a driver session
      * @param capabilities capabilities for a test session
      */
-    abstract void setUp(DesiredCapabilities capabilities) throws IOException, InterruptedException;
+    abstract void setUp(DesiredCapabilities capabilities);
 
     /**
      * @return Appium endpoint to use (IP/wd/hub)
@@ -102,7 +110,7 @@ public enum TestSetup {
     /**
      * Called after a test is finished and a driver session is shut down
      */
-    abstract void tearDown() throws IOException, InterruptedException;
+    abstract void tearDown();
 
 
     /**

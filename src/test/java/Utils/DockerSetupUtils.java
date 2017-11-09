@@ -44,4 +44,5 @@ public class DockerSetupUtils {
         }
         return scanner.next(ipPattern);
     }
+
 }
