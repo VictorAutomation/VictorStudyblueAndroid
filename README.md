@@ -7,4 +7,4 @@ user is logged in one or more google accounts.
 
 Written for Android OS 6.0.
 
-mvn test -Dsurefire.suiteXmlFiles=acceptanceGroup.xml -DTestSetup=LOCAL_SETUP
+mvn test -Dsurefire.suiteXmlFiles=acceptanceGroup.xml -DTestSetup=LOCAL_SETUP# VictorStudyblueAndroid
