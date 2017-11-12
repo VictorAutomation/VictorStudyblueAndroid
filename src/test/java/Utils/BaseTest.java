@@ -77,8 +77,8 @@ public class BaseTest {
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Samsung Galaxy S7 edge");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         capabilities.setCapability(AndroidMobileCapabilityType.NO_SIGN, "true");
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "us.moviemates");
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".Activities.SplashActivity");
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.studyblue");
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.studyblue.ui.mainactivity.SbMainActivity");
         capabilities.setCapability("autoGrantPermissions", "true"); //grant permission to system dialogues such as location
         capabilities.setCapability(MobileCapabilityType.APP, apkFile.getAbsolutePath());
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 30);
